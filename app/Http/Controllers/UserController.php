@@ -17,12 +17,6 @@ class UserController extends Controller
     protected function validaForm(Request $request, $id = null){
         
         $regras = [
-            // 'name' => ['required', 'string','unique:clientes,name,'.$id, 'max:100'],
-            // 'obs' => ['max:500'],
-            // 'dt_cad' => ['required', 'date'],
-            // 'vr_plano'=> ['numeric'],
-            // 'dia_venc' => ['required', 'integer', 'max:31'],
-
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users,email,'.$id],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
@@ -37,12 +31,6 @@ class UserController extends Controller
     protected function validaFormEdt(Request $request, $id = null){
         
         $regras = [
-            // 'name' => ['required', 'string','unique:clientes,name,'.$id, 'max:100'],
-            // 'obs' => ['max:500'],
-            // 'dt_cad' => ['required', 'date'],
-            // 'vr_plano'=> ['numeric'],
-            // 'dia_venc' => ['required', 'integer', 'max:31'],
-
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users,email,'.$id],
             'telefone' => ['required'],

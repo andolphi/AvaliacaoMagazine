@@ -53,10 +53,10 @@
               @auth
                 
                 <li class="nav-item">
-                  <a id="menu_vendedores" href="{{route('admin.users')}}" class="nav-link {{(Request::route()->getName()=='admin.users')
+                  <a id="menu_usuarios" href="{{route('admin.users')}}" class="nav-link {{(Request::route()->getName()=='admin.users')
                                                                       ||(Request::route()->getName()=='admin.formAddUser')
                                                                       ||(Request::route()->getName()=='admin.formEdtUser')?'active':''}}">
-                      <i id="img_vendedores" class="nav-icon far fa-user"></i>
+                      <i id="img_usuarios" class="nav-icon far fa-user"></i>
                       <p>
                           Usuários
                       </p>
@@ -85,25 +85,11 @@
     <script>
       $( document ).ready(function() {
 
-
-          animacao_menu('#menu_entrar','#img_entrar');
-          animacao_menu('#menu_reg_usu','#img_reg_usu');
-          animacao_menu('#menu_minha_conta','#img_minha_conta');
-          animacao_menu('#menu_dados_cadastrais','#img_dados_cadastrais');
-          animacao_menu('#menu_senha','#img_senha');
-          animacao_menu('#menu_empresas','#img_empresas');
-          animacao_menu('#menu_vendedores','#img_vendedores');
-          animacao_menu('#menu_clientes','#img_clientes');
-          animacao_menu('#menu_relatorios','#img_relatorios');
-          animacao_menu('#menu_carencia','#img_carencia');
-          animacao_menu('#menu_pagamentos','#img_pagamentos');
-          animacao_menu('#menu_fechamento','#img_fechamento');
-          animacao_menu('#menu_caixa','#img_caixa');
-          animacao_menu('#menu_resumo','#img_resumo');
-          animacao_menu('#menu_sair','#img_sair');
+        animacao_menu('#menu_entrar','#img_entrar');
+        animacao_menu('#menu_reg_usu','#img_reg_usu');
+        animacao_menu('#menu_usuarios','#img_usuarios');
+        animacao_menu('#menu_sair','#img_sair');
           
-
-
       });
     </script>
     <!-- /.sidebar -->
